@@ -57,3 +57,15 @@ ul.dec-none {
 }
 
 
+    table,
+    th,
+    td {
+      border: 1px solid rgba(189, 179, 181, 0.815);
+    }
+
+    th,
+    td {
+      padding: 10px;
+      text-align: center
+    }
+
