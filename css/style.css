@@ -1,4 +1,4 @@
-
+/* FONTS*::::::::::::::::::::::::::::::::::::::::/
 /* font-family: 'Fira Sans', sans-serif; */
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap');
@@ -6,61 +6,194 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
 
+/* RESETS ::::::::::::::::::::::::::::::::::::::::*/
+
 html, body
 {
     height: 100%;
 }
+body{
+    margin:0;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+      /*FONTS*/
+      font-weight: 400;
+      font-size: 1em;
+      text-decoration: none; 
+    
+      
+}
+ul, ol { 
+list-style-type: none;
+}
+b.bold{
+    font-weight: 900;
+}
 
-.f-topic{
-    font-family: 'Fira Sans', sans-serif; 
-    font-weight: bolder;
-    font-size: 1.3rem;
-    text-transform: uppercase;
+img{
+    width: auto;
+	max-width: 100%;
+
+}
+
+/* CSS ::::::::::::::::::::::::::::::::::::::::*/
+
+
+.container {
+    display: flow-root;
+    background-color: rgb(189, 187, 181);
+    width:auto;
+    max-width: 30em;
+    padding:0 1em;
+    margin: 0 auto;
+
+}
+
+.mar-section {
+margin: 1em 0;
+}
+
+.mar-bger-section {
+    margin: 3em 0;
+    }
+    
+
+.bg-header-secion{
+    background: #000000; 
     
 }
 
-.f-subtopic{
-    font-family: 'Fira Sans', sans-serif; 
-    font-weight: bold;
-    font-size: 1rem;
-
+.bg-main-secion{
+    background: #ececec; 
+    
 }
 
-a.baking {
-    font-family: 'Merriweather', serif;
-    font-weight: bolder; 
-    font-size: .9rem;
-    text-decoration: none; 
-    padding: 3px 5px;
-    background: #ffbc48; 
-    color: ButtonText;
+.bg-footer-secion{
+    background: #a5a2a7; 
+    
+}
+.white-strong {
+    font-weight:900; 
+    color:rgb(255, 255, 255);
+   
 }
 
-a.yellow{
+.f-yellow{
     font-weight: bolder; 
     color:  #ffbc48; 
+    text-decoration-line:underline ;
+}
+.bg-yllw {
+    color: black;
+    font-weight: bolder; 
+    padding: 0 0.3em;
+    background: #ffbc48; 
 }
 
-ul.dec-none {
-    list-style-type: none;
-    
+
+.a-f-baking {
+    font-family: 'Merriweather', serif;
+    font-size: .9em;
+   
+}
+
+.main-heading{
+    font-family: 'Fira Sans', sans-serif; 
+    font-weight: bolder;
+    font-size: 3em;
+    color: ghostwhite;
+    margin: 1rem 0;
+}
+
+.main-pgraph {
+    font-family: 'Merriweather', serif;
+    font-size: 1.1em;
+    letter-spacing: .03em;
+    margin: 1em 0;
+    color: rgb(242, 242, 253);
+}
+
+
+.ul-gral-info {
+    font-family: 'Fira Sans', sans-serif; 
+    letter-spacing: -0.05em;
+    line-height: 1.5em;
+    text-transform: uppercase;
+}
+
+ul.deco{
+    font-family: 'Merriweather', serif;
+    font-size: 1em;
+    line-height: 1.7em;
+    list-style-type:disc;
+    padding-left: 1em;  
+}
+
+ol.steps{
+    list-style-type:decimal;
+    padding-left: 1em;  
 }
 .f-menu {
     font-family: 'Fira Sans', sans-serif; 
     font-weight: bolder;
-    font-size: 1.1rem;
-    text-decoration-line: none;
+    font-size: 1.1em;
+    line-height: 2em;
+    text-decoration: none; 
+    
 }
 
-.l-menu{
-    margin: 0.8em;
+
+.f-all-topics
+{
+    font-family: 'Fira Sans', sans-serif; 
+    font-weight: bolder;
+    margin: 1em 0;  
+    color: black;  
+}
+.f-topic{
+    font-size: 1.3em;
+    text-transform: uppercase; 
+}
+.f-subtopic{ 
+    font-size: 1.2em;
 }
 
+.all-p{
+    font-family: 'Merriweather', serif;
+    font-size: 0.9em;
+    margin: 1em 0;
+    letter-spacing: .04em;
+   
+}
+.bq-pem{
+    font-family: 'Merriweather', serif;
+    font-style: italic;
+    font-size: 0.9em;
+    line-height: 1.5em;
+    margin: 1.5em 0;
+    padding-left: 1em;     
+}
+.left-border{
+    border-left-style: solid;
+    border-width: 0.3em;
+    border-left-color:  #ffbc48; 
+}
 
+.cption {
+    font-family: 'Merriweather', serif;
+    font-size: 0.85em;
+    color: rgb(68, 68, 68);
+}
+
+}
     table,
     th,
     td {
-      border: 1px solid rgba(189, 179, 181, 0.815);
+      border: 1px solid rgba(8, 204, 158, 0.815);
+      background-color: darkblue;
     }
 
     th,
@@ -68,4 +201,3 @@ ul.dec-none {
       padding: 10px;
       text-align: center
     }
-
