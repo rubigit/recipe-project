@@ -67,7 +67,7 @@ margin: 1em 0;
 }
 
 .bg-main-secion{
-    background: #ececec; 
+    background: #ffffff; 
     
 }
 
@@ -188,16 +188,53 @@ ol.steps{
     color: rgb(68, 68, 68);
 }
 
-}
-    table,
-    th,
-    td {
-      border: 1px solid rgba(8, 204, 158, 0.815);
-      background-color: darkblue;
-    }
+.tbl-schedule { 
+    border-collapse: collapse;
+    width: 100%;
+   }
+.tbl-schedule thead, .tbl-schedule tbody {
+    border:0.1em solid  grey;
 
-    th,
-    td {
-      padding: 10px;
-      text-align: center
+}
+.tbl-schedule thead tr :nth-child(2){
+    border-left: 0.05em solid rgb(105, 105, 105);
+  }
+  
+.th-dwn-border {
+    border-bottom: 0.05em solid grey;
+}
+
+.tbl-schedule tbody tr :nth-child(2){
+    border-left: 0.05em solid grey;
+    border-right: 0.05em solid grey;
+  }
+.tbl-schedule th, .tbl-schedule td {
+    text-align: center;
+    padding: 0.6em 0;  
+    color: black; 
+}
+.tbl-schedule thead th{
+    font-family: 'Fira Sans', sans-serif; 
+    font-weight: bolder;    
+    font-size: .9em;
+    text-transform: uppercase; 
+    background-color: #ffbc48;
+   
+}
+
+.tbl-schedule tbody td{
+    font-family: 'Merriweather', serif;
+    font-size: .8em;
+}
+
+tbody tr:nth-child(odd){
+    background-color: #eeedee;
+    /* background-color:	#e7e5e7; */
+  }
+
+tbody tr:nth-child(even) {
+   
+      background-color: #f6f6f6;
+        
     }
+   
