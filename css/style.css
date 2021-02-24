@@ -176,7 +176,7 @@ ol.steps{
     margin: 1.5em 0;
     padding-left: 1em;     
 }
-.left-border{
+.art-left-border{
     border-left-style: solid;
     border-width: 0.3em;
     border-left-color:  #ffbc48; 
@@ -227,12 +227,12 @@ ol.steps{
     font-size: .8em;
 }
 
-tbody tr:nth-child(odd){
+.tbl-schedule tbody tr:nth-child(odd){
     background-color: #eeedee;
     /* background-color:	#e7e5e7; */
   }
 
-tbody tr:nth-child(even) {
+.tbl-schedule tbody tr:nth-child(even) {
    
       background-color: #f6f6f6;
         
