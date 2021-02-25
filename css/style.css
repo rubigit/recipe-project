@@ -243,3 +243,75 @@ ol.steps{
         font-family: inherit;
         font-weight: inherit;
     }
+    
+    /* footer flex*/
+
+   /* margin*/
+    .mainparent {
+ 
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color:lightgreen;
+        /* padding:0.5em 0; */
+       
+       
+      }
+      .mainchild {
+        flex: 1 1 auto;
+        border: 0.2em solid red;
+      }
+      
+      .parent-left-col {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap:wrap;
+        border: 0.2em solid pink;
+      }
+      .left-child-lvl2{
+       background-color: blue;
+       padding: 0.3em;
+       margin: 0.2em 0;
+       color: white;
+       color: white;
+       flex: 0 1 auto;
+       
+      }
+      
+      .parent-term-priv{
+       display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap:wrap;
+        border: 0.1em solid pink;
+      }
+      
+      
+      .parent-term-priv li {
+       background-color: orange;
+       padding-right: 0.5em;
+       margin: 0.2em;
+       color: white;
+       flex: 0 1 auto;
+        }
+      
+      
+      .parent-right-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        flex-wrap:wrap;
+     
+        border: 0.2em solid pink;
+        color: white;
+      
+      }
+      .parent-right-row li {
+       background-color: blue;
+       padding: 0.2em;
+       margin: 0.2em;
+       color: white;
+       flex: 0 1 auto;
+      }
+      
