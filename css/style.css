@@ -238,3 +238,8 @@ ol.steps{
         
     }
    
+    abbr{
+        font-size: inherit;
+        font-family: inherit;
+        font-weight: inherit;
+    }
