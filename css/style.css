@@ -250,8 +250,9 @@ ol.steps{
     .mainparent {
  
         display: flex;
-        flex-direction: row;
+     
         justify-content: space-between;
+        align-items: center;
         background-color:lightgreen;
         /* padding:0.5em 0; */
        
