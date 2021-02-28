@@ -63,7 +63,7 @@ margin: 1em 0;
 }
 
 .mar-bger-section {
-    margin: 1em 0;
+    margin: 0.5em 0;
     display: flow-root;
     }
     
@@ -94,17 +94,15 @@ margin: 1em 0;
     color:  #ffbc48; 
     text-decoration-line:underline ;
 }
-.bg-yllw {
-    color: black;
-    font-weight: bolder; 
-    padding: 0 0.3em;
-    background: #ffbc48; 
-}
 
 
 .a-f-baking {
     font-family: 'Merriweather', serif;
     font-size: .9em;
+    color: black;
+    font-weight: bolder; 
+    padding: 0.3em;
+    background: #ffbc48; 
    
 }
 
@@ -122,15 +120,86 @@ margin: 1em 0;
     letter-spacing: .03em;
     margin: 1em 0;
     color: rgb(242, 242, 253);
+ 
 }
 
-
-.ul-gral-info {
+.ul-status-m-parent{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 0;
+   
+  }
+  
+  .li-sub-parent {
+    display: flex;
+    flex-direction: row;
+    flex: 0 1 auto;
     font-family: 'Fira Sans', sans-serif; 
-    letter-spacing: -0.05em;
-    line-height: 1.5em;
     text-transform: uppercase;
+    font-weight:bolder; 
+    padding: 0.3em 0.3em 0.3em 0;
+  }
+  
+  
+  .li-sub-parent span:first-child {
+    color: rgb(255, 255, 255);
+    padding: 0.3em 0.3em 0.3em 0;
+    flex: 0 1 auto;
+    font-family: inherit;
+    text-transform: inherit;
+    font-weight:inherit;
+  }
+  .li-sub-parent span:last-child {
+    color: black;
+    padding: 0.3em;
+    background-color: #ffbc48;
+    text-align: center;
+    flex: 0 1 auto;
+
+    font-family: inherit;
+    text-transform: inherit;
+    font-weight:inherit;
+  }
+
+  .li-sub-parent time:last-child {
+    color: black;
+    padding: 0.3em;
+    background-color: #ffbc48;
+    text-align: center;
+    flex: 0 1 auto;
+
+    font-family: inherit;
+    text-transform: inherit;
+    font-weight:inherit;
+  }
+  
+  
+  .li-sub-parent time, .li-sub-parent abbr {
+    font-weight: inherit; 
+  }
+
+.ul-menu-parent {
+    display: flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    justify-content: space-between;
+   
 }
+
+.ul-menu-parent li{
+ flex: 1 1 auto;
+  padding: 0.5em 0;
+}
+
+.ul-menu-parent li > a {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: bolder;
+    font-size: 1.1em;
+    color:  #ffbc48; 
+  }
+
+
 
 ul.deco{
     font-family: 'Merriweather', serif;
@@ -143,14 +212,6 @@ ul.deco{
 ol.steps{
     list-style-type:decimal;
     padding-left: 1em;  
-}
-.f-menu {
-    font-family: 'Fira Sans', sans-serif; 
-    font-weight: bolder;
-    font-size: 1.1em;
-    line-height: 2em;
-    text-decoration: none; 
-    
 }
 
 
