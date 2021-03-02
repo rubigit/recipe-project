@@ -283,11 +283,8 @@ ol.steps{
 }
 
 
-
 .layout {
 	display: flow-root;
-	padding: 1em;
-	color: var(--bg2);
 }
 
 
