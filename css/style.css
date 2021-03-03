@@ -27,7 +27,7 @@ html{
       --f-common:sans-serif;
       /* colors */
       --bg-theme-sec:#2CC1C0;
-      --bg-theme-sec2:#34B2AF;
+      --bg-theme-sec2:#2bb9b9;
       --bg-main: rgb(255, 255, 255);
      
       --bg-theme: #fe749c;
@@ -93,10 +93,12 @@ display: flow-root;
 .padd-hder-section {
   padding: 3em 1em 1em 1em;
   display: flow-root;
-  border-radius: 5em 5em 0 0;
+  border-radius: 3em 3em 0 0;
   text-align: center;
   
   }
+
+  
 
 .mar-list {
 margin: 1em 0;
@@ -108,9 +110,17 @@ margin: 1em 0;
     }
     
 
-.bg-theme-section{background-color: var(--bg-theme-sec);}
-.bg-nav-section{background-color: var(--bg-theme);}
+.bg-theme-section{background-color: var(--bg-theme);}
+.bg-theme2-section{background-color: var(--bg-theme-sec);}
 .bg-main-section{background-color: var( --bg-main);}
+.bg-hder-section{
+  background-image: linear-gradient( var(--bg-theme-sec), rgba(22, 207, 53, 0.4),
+  rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1),rgb(0, 0, 0)), url(/img/h-ready-to-eat-1920w.jpg);
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: cover;
+  background-blend-mode: normal, screen;
+}
 
 .white-strong {
     font-weight:900; 
@@ -242,6 +252,11 @@ ul.deco{
     line-height: 1.7em;
     list-style-type:disc;
     padding-left: 1em;  
+    color:var(--bg-theme-sec2);  
+}
+
+ul.deco li *{ 
+color: var(--f-dark);
 }
 
 ol.steps{
@@ -255,7 +270,7 @@ ol.steps{
     font-family: var(--f-hdng), var(--f-common); 
     font-weight: bolder;
     margin: 1em 0;  
-    color: black;  
+    color:var(--bg-theme-sec2);  
 }
 .f-topic{
     font-size: 1.3em;
@@ -432,7 +447,7 @@ ol.steps{
        
       }
       .mainchild {
-        flex: 1 1 auto;
+        flex: 1 1 50%;
         /* border: 0.2em solid red; */
       }
       
