@@ -349,7 +349,6 @@ ol.steps{
 	border-radius: var(--bder-rd);
   box-shadow:  0 0 10px var(--shdw);
   display:grid;
-  border: 0 solid red;
   grid-template-columns: repeat (2, minmax(10em, 1fr));
   justify-content: space-around;
 }
