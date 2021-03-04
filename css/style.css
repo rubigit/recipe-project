@@ -42,6 +42,13 @@ html{
   
   
       --bder-rd: 2em;
+
+
+
+      --padd-item-status: 0.5em;
+      --flx-dir-parent:column;
+      --flx-dir-child: row;
+
       
 }
 body{
@@ -167,7 +174,7 @@ margin: 1em 0;
 
 .ul-status-m-parent{
     display: flex;
-    flex-direction: column;
+    flex-direction: var(--flx-dir-parent);
     justify-content: space-between;
     padding-left: 0;
    
@@ -175,8 +182,8 @@ margin: 1em 0;
   
   .li-sub-parent {
     display: flex;
-    flex-direction: row;
-    flex: 0 1 auto;
+    flex-direction: var(--flx-dir-child);
+    flex: 0 1 25%;
     font-family: var(--f-hdng), var(--f-common); 
     letter-spacing: -0.1em;
     text-transform: uppercase;
@@ -187,11 +194,12 @@ margin: 1em 0;
   
   .li-sub-parent span:first-child {
     color: var(--f-clear);
-    padding: 0.3em 0.3em 0.3em 0;
+    padding: 0.3em 0.5em 0.3em var(--padd-item-status);
     flex: 0 1 auto;
     font-family: inherit;
     text-transform: inherit;
     font-weight:inherit;
+    text-align: center;
   }
   .li-sub-parent span:last-child {
     color: black;
@@ -224,7 +232,7 @@ margin: 1em 0;
 
 .ul-menu-parent {
     display: flex;
-    flex-direction: column;
+    flex-direction: var(--flx-dir-parent);
     flex-wrap:wrap;
     justify-content: space-between;
    
@@ -534,3 +542,13 @@ ol.steps{
         background-color: var( --bg-theme);
         color: black; 
       }
+
+
+      @media screen and (min-width: 40em) {
+        html {
+      
+      --padd-item-status: 0;
+      --flx-dir-parent:row;
+      --flx-dir-child: column;
+      }
+    }
