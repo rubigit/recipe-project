@@ -50,6 +50,11 @@ html{
       --flx-dir-child: row;
 
       --algn-menu:left;
+
+      --padd:0;
+      --padd:0;
+      --rad:0;
+      --padd-graph:0;
 }
 body{
     margin:0;
@@ -98,10 +103,10 @@ display: flow-root;
 
 }
 .padd-hder-section {
-  padding: 3em 1em 1em 1em;
+  padding: var(--padd) 1em 1em 1em;
   display: flow-root;
-  border-radius: 3em 3em 0 0;
-  text-align: center;
+  border-radius: var(--rad) var(--rad) 0 0;
+  text-align: var(--algn-menu);
   
   }
 
@@ -167,7 +172,7 @@ margin: 1em 0;
     letter-spacing: .03em;
     margin: 1em 0;
     color: var(--f-clear);
-    padding: 1em 10%;
+    padding: 1em var(--padd-graph);
     text-align: inherit;
  
 }
@@ -539,5 +544,9 @@ ol.steps{
       --flx-dir-parent:row;
       --flx-dir-child:column;
       --algn-menu:center;
+      --padd:1.5em;
+      --rad:3em;
+      --padd-graph:10%;
+
       }
     }
