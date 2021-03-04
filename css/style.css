@@ -127,7 +127,7 @@ margin: 1em 0;
 .bg-main-section{background-color: var( --bg-main);}
 .bg-hder-section{
   background-image: linear-gradient( var(--bg-theme-sec), rgba(22, 207, 53, 0.4),
-  rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1),rgb(0, 0, 0)), url(../img/h-ready-to-eat-1920w.jpg);
+  rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1),rgb(0, 0, 0)), url("../img/h-ready-to-eat-1920w.jpg");
   background-repeat: no-repeat;
   background-position:center;
   background-size: cover;
