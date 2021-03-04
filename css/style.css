@@ -45,7 +45,7 @@ html{
 
 
 
-      --padd-item-status: 0.5em;
+      /* --padd-item-status: 0; */
       --flx-dir-parent:column;
       --flx-dir-child: row;
 
@@ -89,11 +89,8 @@ img{
 
 .container {
     display: flow-root;
-    background-color: rgb(189, 187, 181);
+    /* background-color: rgb(189, 187, 181); */
     width:auto;
-    max-width: 80%;
-    padding:0 1em;
-    margin: 0 auto;
 
 }
 
@@ -200,12 +197,12 @@ margin: 1em 0;
   
   .li-sub-parent span:first-child {
     color: var(--f-clear);
-    padding: 0.3em 0.5em 0.3em var(--padd-item-status);
+    padding: 0.3em 0.5em 0.3em 0;
     flex: 0 1 auto;
     font-family: inherit;
     text-transform: inherit;
     font-weight:inherit;
-    text-align: center;
+    text-align: var(--algn-menu);
   }
   .li-sub-parent span:last-child {
     color: black;
@@ -544,13 +541,21 @@ ol.steps{
       @media screen and (min-width: 40em) {
         html {
       
-      --padd-item-status: 0;
+      /* --padd-item-status: 0; */
       --flx-dir-parent:row;
       --flx-dir-child:column;
       --algn-menu:center;
       --padd:1.5em;
       --rad:3em;
       --padd-graph:10%;
+    
 
       }
+
+
+      .container {
+        max-width: 80%;
+        padding:0 1em;
+        margin: 0 auto;
+    }
     }
