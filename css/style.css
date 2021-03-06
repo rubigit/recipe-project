@@ -31,6 +31,7 @@ html{
       --bg-main: rgb(255, 255, 255);
      
       --bg-theme: #fe749c;
+      --hlight:hsla(343, 99%, 73%, 0.3);
   
       --f-clear: white;
       --f-dark: black;
@@ -74,8 +75,13 @@ body{
 ul, ol { 
 list-style-type: none;
 }
-b.bold{
+.bold{
     font-weight: 900;
+}
+
+.h-light{
+  background-color:var(--hlight);
+
 }
 
 img{
