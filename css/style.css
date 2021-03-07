@@ -85,6 +85,7 @@ img{
   box-shadow: -0.2em var(--cmon-padd) var(--cmon-padd) grey; 
 	max-width: 100%;
   width: auto;
+  height: auto;
 }
 
 .container {
