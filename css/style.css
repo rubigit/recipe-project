@@ -184,7 +184,7 @@ rgba(0, 0, 0, 0.1),rgb(0, 0, 0)), url("../img/h-ready-to-eat-1920w.jpg");
   padding-left: 0; 
 }
   
-.li-sub-parent {
+.li-status-sub-parent {
   display: flex;
   flex-direction: var(--flx-dir-child);
   flex: 0 1 25%;
@@ -196,7 +196,7 @@ rgba(0, 0, 0, 0.1),rgb(0, 0, 0)), url("../img/h-ready-to-eat-1920w.jpg");
   text-transform: uppercase;
 }
    
-.li-sub-parent span:first-child {
+.li-status-sub-parent span:first-child {
   color: var(--f-clear);   
   flex: 0 1 auto;
   font-family: inherit;   
@@ -206,7 +206,7 @@ rgba(0, 0, 0, 0.1),rgb(0, 0, 0)), url("../img/h-ready-to-eat-1920w.jpg");
   text-transform: inherit;
  }
 
-.li-sub-parent span:last-child, .li-sub-parent time:last-child {
+.li-status-sub-parent span:last-child, .li-status-sub-parent time:last-child {
   background-color: var(--bg-theme);  
   color: black;   
   flex: 0 1 auto;
@@ -247,7 +247,7 @@ rgba(0, 0, 0, 0.1),rgb(0, 0, 0)), url("../img/h-ready-to-eat-1920w.jpg");
   font-size: 1.1em; 
 }
 
-ul.deco {
+.list-deco {
   color:var(--f-side-topic);  
   font-family: var(--f-shdng), var(--f-common); 
   font-size: 1em;
@@ -257,14 +257,14 @@ ul.deco {
     
 }
 
-ul.deco li * { 
+.list-deco li * { 
   color: var(--f-dark);
 }
 
-ul.deco li b{
+.list-deco li b{
   padding-right: var(--cmon-padd);
 }
-ul.deco li abbr{
+.list-deco li abbr{
   padding-left: var(--cmon-padd);
 }
 ol.steps{
