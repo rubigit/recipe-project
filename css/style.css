@@ -368,13 +368,13 @@ ol.steps{
 }
 .toggle {
   padding: 0.25em 0.1em;
-  min-width: 8em;
+  min-width: 10em;
   width:fit-content;
   background-color: white;
 	border-radius: var(--bder-rd);
   box-shadow:  0 0 10px var(--shdw);
   display:grid;
-  grid-template-columns: repeat (2, minmax(10em, 1fr));
+  grid-template-columns: repeat (auto-fit, minmax(10em, 1fr));
   justify-content: space-around;
 }
 
@@ -389,7 +389,7 @@ ol.steps{
 }
 
 .chbox:checked + .toggle-layout .switch {
-	transform: translateX(3.8em);
+	transform: translateX(4.8em);
   transition: transform 200ms;
  }
 
