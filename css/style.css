@@ -92,6 +92,7 @@ list-style-type: none;
 img{
     width: auto;
 	max-width: 100%;
+  border-radius: 3%;
 
 }
 
@@ -259,6 +260,7 @@ margin: 1em 0;
   .li-sub-parent time, .li-sub-parent abbr {
     font-weight: inherit; 
   }
+  
 
 
 .ul-menu-parent {
@@ -302,10 +304,16 @@ ul.deco{
 ul.deco li *{ 
 color: var(--f-dark);
 }
-
+ul.deco li b{
+  padding-right: 0.2em;
+}
+ul.deco li abbr{
+  padding-left: 0.2em;
+}
 ol.steps{
     list-style-type:decimal;
     padding-left: 1em;  
+    color: var(--bg-theme-sec);  
 }
 
 .f-all-topics, .fc-main-topic2 {
@@ -336,6 +344,7 @@ ol.steps{
     font-size: 0.9em;
     margin: 1em 0;
     letter-spacing: .04em;
+    color:black;
    
 }
 .bq-pem{
@@ -507,7 +516,7 @@ ol.steps{
        
        padding: 0.3em;
        margin: 0.2em 0;
-       color: var(--f-clear);
+       color: var(--f-dark);
        flex: 0 1 auto;
        font-family: var(--f-shdng), var(--f-common);
        
