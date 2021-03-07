@@ -50,6 +50,7 @@ html{
       --rad:0;
       --padd-graph:0;
       --cmon-padd:0.2em;
+      --menu-padd:1em;
 }
 
 * {
@@ -90,10 +91,6 @@ img{
   display: flow-root;
   width:auto;
 }
-
-/* .padd-section, .padd-hder-section, .padd-hder2-section {
-  display: flow-root;
-} */
 
 .padd-section {
   padding:0 1em;
@@ -209,27 +206,17 @@ rgba(0, 0, 0, 0.1),rgb(0, 0, 0)), url("../img/h-ready-to-eat-1920w.jpg");
   text-transform: inherit;
  }
 
-.li-sub-parent span:last-child {
+.li-sub-parent span:last-child, .li-sub-parent time:last-child {
   background-color: var(--bg-theme);  
   color: black;   
   flex: 0 1 auto;
   font-family: inherit;
   font-weight:inherit;
   padding: 0.3em;
-  text-transform: inherit;
   text-align: center;
+  text-transform: inherit;
 }
 
-.li-sub-parent time:last-child {
-  color: black;
-  padding: 0.3em;
-  background-color: var(--bg-theme);
-  text-align: center;
-  flex: 0 1 auto;
-  font-family: inherit;
-  text-transform: inherit;
-  font-weight:inherit;
-}
    
 .ul-menu-parent {
   display: flex;
@@ -242,21 +229,23 @@ rgba(0, 0, 0, 0.1),rgb(0, 0, 0)), url("../img/h-ready-to-eat-1920w.jpg");
 .ul-menu-parent li {
   flex: 1 1 auto;
   text-align: var(--algn-menu);
-  padding: 0.5em 0;
+  padding: 0.5em var(--menu-padd);
   margin:0.1em;
   background-color: var(--bg-theme);
+  color: var(--f-dark); 
 }
 
 .ul-menu-parent li:hover {
-  opacity: 0.7;
+  background-color:var(--f-dark);
+  color: var(--f-clear); 
 }
 
 .ul-menu-parent li > a {
-  color: var(--f-dark); 
+  color: inherit;
   font-family: var(--f-hdng), var(--f-common); 
   font-weight: bolder;
   font-size: 1.1em; 
-    }
+}
 
 ul.deco {
   color:var(--f-side-topic);  
@@ -284,41 +273,38 @@ ol.steps{
   padding-left: 1em;     
 }
 
-
-
 .f-all-topics, .fc-main-topic2 {
   font-family: var(--f-hdng), var(--f-common); 
   font-weight: bolder;
   margin: 1em 0; 
 }
 
-.f-all-topics
-{
+.f-all-topics {
   color:var(--bg-theme-sec2);    
 }
 
-.fc-main-topic2{
+.fc-main-topic2 {
   color:var(--f-side-topic); 
 }
 
-.f-topic{
+.f-topic {
   font-size: 1.3em;
   text-transform: uppercase; 
 }
-.f-subtopic{ 
+
+.f-subtopic { 
   font-size: 1.2em;
 }
 
-.all-p{
+.all-p {
   color:black;
   font-family: var(--f-shdng), var(--f-common); 
   font-size: 0.9em;   
   letter-spacing: .04em;    
-  margin: 1em 0;
-   
+  margin: 1em 0;  
 }
 
-.bq-pem{   
+.bq-pem {   
   border-left-style: solid;
   border-width: 0.3em;
   border-left-color: var(--bg-theme); 
@@ -333,8 +319,7 @@ ol.steps{
 .cption {
   color: rgb(68, 68, 68);
   font-family: var(--f-shdng), var(--f-common); 
-  font-size: 0.85em;
-    
+  font-size: 0.85em;   
 }
 
 .toggle-layout {
@@ -348,7 +333,6 @@ ol.steps{
   --f-grey: black;
   --bg-sw1: black;
   --bg-sw2: white;
- 
 }
 .chbox {
 	display: none;
@@ -392,14 +376,14 @@ ol.steps{
   user-select: none;
 }
 
-.sw-left{
+.sw-left {
   color: var(--f-dark);
   background-color: var(--bg-theme);
   box-shadow: 0 0 0.15em var(--bg-sw2);
   grid-column-start: 1;
 }
 
-.sw-right{
+.sw-right {
   color: var(--f-grey);
   background-color: var(--f-clear);
   box-shadow: 0 0 0.15em var(--bg-sw1);
@@ -411,9 +395,11 @@ ol.steps{
   box-shadow: -0.1em 0.1em 0.5em grey;
   width: 100%;
 }
+
 .tbl-schedule thead, .tbl-schedule tbody {
   border:0.1em solid  grey;
 }
+
 .tbl-schedule thead tr :nth-child(2){
   border-left: 0.05em solid rgb(105, 105, 105);
 }
@@ -472,7 +458,7 @@ ol.steps{
   justify-content: center;
 }
 
-.left-child-lvl2{
+.left-child-lvl2 {
   color: var(--f-dark);
   flex: 0 1 auto;
   font-family: var(--f-shdng), var(--f-common);
@@ -480,7 +466,7 @@ ol.steps{
   padding: 0.3em;
 }
       
-.parent-term-priv{
+.parent-term-priv {
   display: flex;
   justify-content: flex-start;
   flex-wrap:wrap;
@@ -537,6 +523,7 @@ ol.steps{
     --padd:1.5em;
     --rad:3em;
     --padd-graph:10%;
+    --menu-padd:0;
     --f-side-topic: black;
   }
 
@@ -544,7 +531,6 @@ ol.steps{
     box-shadow: 0 0.3em 0.7em grey;
     max-width: 80%;
     margin: 0 auto;
-    
   }
 
   .padd-main-layout{
