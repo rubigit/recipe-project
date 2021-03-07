@@ -1,5 +1,8 @@
 /* FONTS*::::::::::::::::::::::::::::::::::::::::*/
 
+/* font-family: 'Gamja Flower', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap');
+
 /* font-family: 'Dancing Script', cursive; */
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
@@ -21,6 +24,7 @@ html, body
 }
 html{
       /* fonsts */
+      --f-logo: Gamja Flower;
       --f-mhdng:Dancing Script;
       --f-hdng:Cantarell;
       --f-shdng:'Crimson Text';
@@ -168,12 +172,13 @@ margin: 1em 0;
 
 
 .a-f-baking {
-    font-family: var(--f-shdng), var(--f-common); 
-    font-size: .9em;
+    font-family: var( --f-logo), var(--f-common); 
+    font-size: 2em;
     color: black;
     font-weight: bolder; 
-    padding: 0.3em;
+    padding: 0.2em 1.5em;
     background-color: var(--bg-theme); 
+    border-radius: 90% 90% 10% 10%;
    
 }
 
@@ -393,9 +398,6 @@ ol.steps{
   cursor: pointer;
   
 }
-
-
-
 .chbox:checked + .toggle-layout .switch {
 	transform: translateX(4.8em);
   transition: transform 200ms;
