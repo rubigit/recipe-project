@@ -247,7 +247,7 @@ rgba(0, 0, 0, 0.1),rgb(0, 0, 0)), url("../img/h-ready-to-eat-1920w.jpg");
   color: inherit;
   font-family: var(--f-hdng), var(--f-common); 
   font-weight: bolder;
-  font-size: 1.1em; 
+  font-size: 1em; 
 }
 
 .list-deco {
