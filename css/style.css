@@ -459,6 +459,9 @@ ol.steps{
   background-color: #f6f6f6;
 }
     
+/* style footer section */
+
+/* footer main-parent */
 .fter-mainparent {
   align-items: center;
   display: flex; 
@@ -466,10 +469,12 @@ ol.steps{
   justify-content: space-between; 
 }
 
+/* footer main child, right and left */
 .fter-mainchild {
   flex: 1 1 50%;
 }
 
+/* sub parent left*/
 .parent-left-col {
   display: flex;
   flex-direction: column;  
@@ -477,6 +482,7 @@ ol.steps{
   justify-content: center;
 }
 
+/* sub child left*/
 .left-child-lvl2 {
   color: var(--f-dark);
   flex: 0 1 auto;
@@ -484,26 +490,27 @@ ol.steps{
   margin: var(--cmon-padd) 0;
   padding: 0.3em;
 }
-      
+ /* ul for terms and privacy */     
 .parent-term-priv {
   display: flex;
   justify-content: flex-start;
   flex-wrap:wrap;
 }
-      
+ /* li terms and privacy */    
 .parent-term-priv li {    
   color: inherit;
   flex: 0 1 auto;
   font-family: inherit;
   padding-right: 0.5em;
 }
-
+/* terms and privacy anchors*/
 .parent-term-priv li a {
   color: inherit;
   font-family: inherit;
   text-align: left;
 }
-      
+ 
+/* sub parent right - ul social media*/
 .parent-right-row {
   display: flex;
   flex-wrap:wrap;
@@ -511,30 +518,15 @@ ol.steps{
   padding: 0.5em 0;
 }
 
+/* li social media */
 .parent-right-row li {
   padding: 0em;
   margin: 0;
   flex: 0 1 auto;
   font-size: 2.5em;
 }
-.go-top {
-display: flex;
-justify-content: flex-end;
-}
 
-.a-top{
-  color:#ffd4e0;
-  background-color: var(--bg-theme-sec2); 
-  border-radius: 20% 20% 0 0;
-  box-shadow: -0.05em -0.05em 0.1em rgba(0, 0, 0, 0.8);
-  font-size: 1em;
-  font-weight: bolder;
-  padding: 0.3em 0.5em;
-  position: relative;
-  text-align: center;
-  top: -0.5em;
-  
-}
+/* social media icons */
       
 .fa {
   border-radius: 1em;
@@ -551,7 +543,30 @@ justify-content: flex-end;
 .fa-facebook, .fa-twitter, .fa-instagram {
   color:var(--bg-theme-sec);   
 }
-      
+  
+/* bptton go to*/
+.go-top {
+  display: flex;
+  justify-content: flex-end;
+  }
+  
+  .a-top{
+    color:#ffd4e0;
+    background-color: var(--bg-theme-sec2); 
+    border-radius: 20% 20% 0 0;
+    box-shadow: -0.05em -0.05em 0.1em rgba(0, 0, 0, 0.8);
+    font-size: 1em;
+    font-weight: bolder;
+    padding: 0.3em 0.5em;
+    position: relative;
+    text-align: center;
+    top: -0.5em;
+    
+  }
+
+  /* MEDIA-Q //////////////////////////////////////////*/
+
+
 @media screen and (min-width: 55em) {
   html {  
     --flx-dir-parent:row;
