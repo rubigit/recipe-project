@@ -62,10 +62,12 @@ html{
   padding:0;  
 }
 
+
 ul, ol { 
   list-style-type: none;
 }
 
+/* general font style */
 abbr{
   font-size: inherit;
   font-family: inherit;
@@ -80,6 +82,16 @@ abbr{
   background-color:var(--hlight);
 }
 
+.white-strong {
+  font-weight:900; 
+  color: var(--f-clear);  
+}
+
+.f-yellow{
+  font-weight: bolder; 
+  color: var(--bg-theme);
+  text-decoration-line:underline ;
+}
 img{
   border-radius: 3%;
   box-shadow: -0.2em var(--cmon-padd) var(--cmon-padd) grey; 
@@ -88,11 +100,13 @@ img{
   height: auto;
 }
 
+/*main wraper*/
 .container {
   display: flow-root;
   width:auto;
 }
 
+/*padding and margins sections */
 .padd-section {
   padding:0 1em;
 }
@@ -121,6 +135,7 @@ img{
   display: flow-root;
 }
     
+/* back-ground sections */
 
 .bg-theme-section{background-color: var(--bg-theme);}
 .bg-theme2-section{background-color: var(--bg-theme-sec);}
@@ -136,17 +151,8 @@ rgba(0, 0, 0, 0.1),rgb(0, 0, 0)), url("../img/h-ready-to-eat-1920w.jpg");
   box-shadow: 0 0.4em 0.8em rgba(255, 255, 255,0.3);
 }
 
-.white-strong {
-  font-weight:900; 
-  color: var(--f-clear);  
-}
 
-.f-yellow{
-  font-weight: bolder; 
-  color: var(--bg-theme);
-  text-decoration-line:underline ;
-}
-
+/* logo */
 .a-f-baking {
   font-family: var( --f-logo), var(--f-common); 
   font-size: 2em;
@@ -161,6 +167,7 @@ rgba(0, 0, 0, 0.1),rgb(0, 0, 0)), url("../img/h-ready-to-eat-1920w.jpg");
    
 }
 
+/* items header top*/
 .main-heading{
   color: var(--f-clear);
   font-family: var(--f-mhdng), var(--f-common); 
@@ -178,6 +185,9 @@ rgba(0, 0, 0, 0.1),rgb(0, 0, 0)), url("../img/h-ready-to-eat-1920w.jpg");
   padding: 0 var(--padd-graph);
   text-align: inherit;
 }
+
+/* items header bottom */
+/* recipe general information */
 
 .ul-status-m-parent{
   display: flex;
@@ -220,7 +230,7 @@ rgba(0, 0, 0, 0.1),rgb(0, 0, 0)), url("../img/h-ready-to-eat-1920w.jpg");
   text-transform: inherit;
 }
 
-   
+/* menu items */   
 .ul-menu-parent {
   display: flex;
   flex-direction: var(--flx-dir-parent);
@@ -250,6 +260,7 @@ rgba(0, 0, 0, 0.1),rgb(0, 0, 0)), url("../img/h-ready-to-eat-1920w.jpg");
   font-size: 1em; 
 }
 
+ /* style ul and li (ingredientes, equipment, process) */
 .list-deco {
   color:var(--f-side-topic);  
   font-family: var(--f-shdng), var(--f-common); 
@@ -276,6 +287,7 @@ ol.steps{
   padding-left: 1em;     
 }
 
+/* style headings and subheadigs */
 .f-all-topics, .fc-main-topic2 {
   font-family: var(--f-hdng), var(--f-common); 
   font-weight: bolder;
@@ -298,7 +310,7 @@ ol.steps{
 .f-subtopic { 
   font-size: 1.2em;
 }
-
+/* style paragraphs */
 .all-p {
   color:black;
   font-family: var(--f-shdng), var(--f-common); 
@@ -307,6 +319,7 @@ ol.steps{
   margin: 1em 0;  
 }
 
+/* style blockquote */
 .bq-pem {   
   border-left-style: solid;
   border-width: 0.3em;
@@ -325,6 +338,7 @@ ol.steps{
   font-size: 0.85em;   
 }
 
+/* style toggle button */
 .toggle-layout {
 	display: flow-root;
 }
@@ -393,6 +407,7 @@ ol.steps{
   grid-column-start: 2;
 }
 
+/* style table */
 .tbl-schedule { 
   border-collapse: collapse; 
   box-shadow: -0.1em 0.1em 0.5em grey;
