@@ -589,8 +589,8 @@ ol.steps{
     grid-template-columns: 1fr 2fr;
     grid-template-areas:
     "sid nav"
-    "sid  ."
-    "sid  ."
+    "sid  ma"
+    "sid  mb"
     "sid fot";
   }
 
@@ -605,6 +605,14 @@ ol.steps{
         
   .main-content {
     flex-grow: 1;
+  }
+
+  .main-contentA{
+    grid-area: ma;
+  }
+
+  .main-contentB{
+    grid-area: mb;
   }
 
   .ul-status-m-parent {
